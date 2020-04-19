@@ -31,7 +31,6 @@ a {
   transition: 300ms linear;
 }
 a:hover {
-  text-decoration: underline;
   transition: all 300ms linear;
 }
 code {

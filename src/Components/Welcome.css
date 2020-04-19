@@ -21,7 +21,6 @@
 a.button:hover {
   background-color: linen;
   color: rgb(31, 31, 31);
-  text-decoration: none;
 }
 
 /* The typing effect */

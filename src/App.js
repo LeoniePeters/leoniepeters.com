@@ -14,11 +14,11 @@ function App() {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <i class="icon-linkedin">&#xf0e1;</i>
+            <i className="icon-linkedin">&#xf0e1;</i>
           </a>
 
           <a href="https://github.com/LeoniePeters" target="_blank">
-            <i class="icon-github-circled">&#xf09b;</i>
+            <i className="icon-github-circled">&#xf09b;</i>
           </a>
         </div>
       </header>

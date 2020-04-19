@@ -15,15 +15,13 @@ i {
   justify-content: flex-end;
 }
 .social-media-links a {
-  color: linen;
   display: inline-block;
   font-family: "fontello";
   font-size: 32px;
   padding: 0.5em;
 }
 .social-media-links a:hover {
-  text-decoration: none;
-  color: skyblue;
+  color: linen;
 }
 
 @keyframes App-logo-spin {
