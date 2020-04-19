@@ -38,8 +38,7 @@
   padding: 0 1.5em;
   width: 75%;
 }
-.portfolio-item:hover .info,
-.portfolio-item:focus .info {
+.portfolio-item:hover .info {
   max-height: 100%;
   visibility: visible;
   transition: max-height 500ms linear, padding 300ms linear;
@@ -70,8 +69,7 @@ i:hover {
     width: 100%;
     padding: 0.5em;
   }
-  .portfolio-item:hover .info,
-  .portfolio-item:focus .info {
+  .portfolio-item:hover .info {
     padding: 0.5em;
   }
   i {
