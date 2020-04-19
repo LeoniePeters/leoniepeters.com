@@ -1,0 +1,13 @@
+.About {
+  box-sizing: border-box;
+  border: 1px solid linen;
+  margin: 1.5em 0;
+  padding: 1.5em;
+  width: 100%;
+}
+.About :first-child {
+  margin-top: 0;
+}
+.About :last-child {
+  margin-bottom: 0;
+}

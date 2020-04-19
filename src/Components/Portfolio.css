@@ -1,0 +1,64 @@
+.Portfolio {
+  box-sizing: border-box;
+  border: 1px solid linen;
+  padding: 1.5em;
+}
+.Portfolio :first-child {
+  margin-top: 0;
+}
+.Portfolio :last-child {
+  margin-bottom: 0;
+}
+.portfolio-item {
+  display: flex;
+  align-items: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  margin: 3em -1.5em;
+  height: 50vw;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-item {
+    height: 562px;
+  }
+}
+.portfolio-item a {
+  /* opacity: 0; */
+  visibility: hidden;
+  display: block;
+  background: rgb(31, 31, 31);
+  box-sizing: border-box;
+  border: 1px solid linen;
+
+  margin: 0 auto;
+  padding: 1.5em;
+  width: 75%;
+  transition: max-height 500ms linear;
+}
+.portfolio-item:hover a {
+  /* opacity: 1; */
+  visibility: visible;
+  transition: max-height 500ms linear;
+}
+
+.natuurstad {
+  background-image: url("../static/media/Natuurstad-screenshot.jpg");
+}
+.kor-utrecht {
+  background-image: url("../static/media/KOR-Utrecht-screenshot.jpg");
+}
+.nsob {
+  background-image: url("../static/media/nsob-screenshot.jpg");
+}
+.leraarvanbuiten {
+  background-image: url("../static/media/leraarvanbuiten-screenshot.jpg");
+}
+.hollandhightech {
+  background-image: url("../static/media/hollandhightech-screenshot.jpg");
+}
+.ohmmmm {
+  background-image: url("../static/media/ohmmmm-screenshot.png");
+}
+.drawbsurd {
+  background-image: url("../static/media/drawbsurd-screenshot.jpg");
+}

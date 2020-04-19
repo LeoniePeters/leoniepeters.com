@@ -1,4 +1,29 @@
-.App {
+header {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+main {
+  max-width: 1000px;
+  margin: 3em auto;
+  padding: 0 3vw;
+}
+i {
+  font-style: normal;
+}
+.social-media-links {
+  display: flex;
+  justify-content: flex-end;
+}
+.social-media-links a {
+  color: linen;
+  display: inline-block;
+  font-family: "fontello";
+  font-size: 32px;
+  padding: 0.5em;
+}
+.social-media-links a:hover {
+  text-decoration: none;
+  color: skyblue;
 }
 
 @keyframes App-logo-spin {

@@ -1,0 +1,35 @@
+.Welcome {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.portrait {
+  max-width: 244px;
+}
+.welcome-message h2 {
+  overflow: hidden;
+  border-right: 0.5em solid linen;
+  white-space: nowrap;
+  animation: typing 2.5s steps(34, end);
+}
+.button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  border: 1px solid linen;
+  margin: 0 2em 0 0;
+}
+a.button:hover {
+  background-color: linen;
+  color: rgb(31, 31, 31);
+  text-decoration: none;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
