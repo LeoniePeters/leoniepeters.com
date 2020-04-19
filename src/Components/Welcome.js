@@ -8,10 +8,10 @@ function Welcome() {
       <div className="welcome-message">
         <h1>Welcome!</h1>
         <h2>I am Leonie, web developer</h2>
-        <a href="#portfolio" className="button">
+        <a href="#portfolio" className="button portfolio">
           What I build
         </a>
-        <a href="#about" className="button">
+        <a href="#about" className="button about">
           About me
         </a>
       </div>

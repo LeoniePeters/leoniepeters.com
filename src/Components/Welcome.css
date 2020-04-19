@@ -1,10 +1,16 @@
 .Welcome {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
 }
 .portrait {
   max-width: 244px;
+  margin: 0 0 0 auto;
+  padding-left: 3em;
+}
+.welcome-message {
+  margin-bottom: 1em;
 }
 .welcome-message h2 {
   overflow: hidden;
@@ -16,6 +22,8 @@
   display: inline-block;
   padding: 0.5em 1em;
   border: 1px solid linen;
+}
+.button.portfolio {
   margin: 0 2em 0 0;
 }
 a.button:hover {
@@ -30,5 +38,11 @@ a.button:hover {
   }
   to {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .portrait {
+    padding: 0;
   }
 }
