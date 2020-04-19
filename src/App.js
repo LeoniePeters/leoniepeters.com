@@ -13,11 +13,16 @@ function App() {
             href="https://www.linkedin.com/in/leonie-e-peters/"
             rel="noopener noreferrer"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <i className="icon-linkedin">&#xf0e1;</i>
           </a>
 
-          <a href="https://github.com/LeoniePeters" target="_blank">
+          <a
+            href="https://github.com/LeoniePeters"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="icon-github-circled">&#xf09b;</i>
           </a>
         </div>
