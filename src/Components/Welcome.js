@@ -6,7 +6,7 @@ function Welcome() {
   return (
     <div className="Welcome">
       <div className="welcome-message">
-        <h1>Welcome!</h1>
+        <h1>Hi!</h1>
         <h2>I am Leonie, web developer</h2>
         <a href="#portfolio" className="button portfolio">
           What I build
