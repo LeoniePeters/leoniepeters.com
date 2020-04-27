@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
 import Welcome from "./Components/Welcome";
 import About from "./Components/About";
 import Portfolio from "./Components/Portfolio";
@@ -15,7 +15,7 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className="icon-linkedin">&#xf0e1;</i>
+            <i className="icon-linkedin"></i>
           </a>
 
           <a
@@ -23,7 +23,7 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className="icon-github-circled">&#xf09b;</i>
+            <i className="icon-github-circled"></i>
           </a>
         </div>
       </header>
