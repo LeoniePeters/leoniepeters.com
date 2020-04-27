@@ -1,6 +1,6 @@
 import React from "react";
 import leonie from "../assets/images/leonie-portret.jpg";
-import "./Welcome.css";
+import "./Welcome.scss";
 
 function Welcome() {
   return (
