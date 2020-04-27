@@ -1,5 +1,5 @@
 import React from "react";
-import leonie from "../static/media/leonie-portret.jpg";
+import leonie from "../assets/images/leonie-portret.jpg";
 import "./Welcome.css";
 
 function Welcome() {
