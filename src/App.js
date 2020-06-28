@@ -10,7 +10,6 @@ function App() {
         <div className="social-media-links">
           <a
             href="https://www.linkedin.com/in/leonie-e-peters/"
-            rel="noopener noreferrer"
             target="_blank"
             rel="noopener noreferrer"
           >
