@@ -29,7 +29,6 @@ function App() {
       </header>
       <main>
         <Welcome />
-        <About />
         <Portfolio />
       </main>
       <footer></footer>

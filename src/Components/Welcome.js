@@ -1,22 +1,29 @@
 import React from "react";
-import leonie from "../assets/images/leonie-portret.jpg";
 import "./Welcome.scss";
 
 function Welcome() {
   return (
     <div className="Welcome">
-      <div className="welcome-message">
-        <h1>Hi!</h1>
-        <h2>I am Leonie, web developer</h2>
-        <a href="#portfolio" className="button portfolio">
-          What I build
-        </a>
-        <a href="#about" className="button about">
-          About me
-        </a>
+      <div className="whoami hexagon">
+        <h1>Leonie Peters: web developer</h1>
       </div>
-      <div className="portrait">
-        <img src={leonie} alt="portrait Leonie" />
+      <div className="hoi hexagon">
+        <p>👋🏼</p>
+      </div>
+      <div className="history hexagon">
+        <p>
+          Art historian turned coder thanks to{" "}
+          <a href="https://codaisseur.com/">Codaisseur</a>.
+        </p>
+      </div>
+      <div className="job hexagon">
+        <p>
+          Currently front-end developer @{" "}
+          <a href="https://www.ontwerpwerk.nl/">Ontwerpwerk</a>.
+        </p>
+      </div>
+      <div className="stack hexagon">
+        <p>♥ Sass, JavaScript, React</p>
       </div>
     </div>
   );
