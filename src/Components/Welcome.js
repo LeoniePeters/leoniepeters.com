@@ -8,7 +8,9 @@ function Welcome() {
         <h1>Leonie Peters: web developer</h1>
       </div>
       <div className="hoi hexagon">
-        <p>👋🏼</p>
+        <span role="img" aria-label="zwaaiende hand">
+          👋🏻
+        </span>
       </div>
       <div className="history hexagon">
         <p>
