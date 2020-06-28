@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.scss";
 import Welcome from "./Components/Welcome";
-import About from "./Components/About";
 import Portfolio from "./Components/Portfolio";
 
 function App() {
@@ -11,7 +10,6 @@ function App() {
         <div className="social-media-links">
           <a
             href="https://www.linkedin.com/in/leonie-e-peters/"
-            rel="noopener noreferrer"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -29,7 +27,6 @@ function App() {
       </header>
       <main>
         <Welcome />
-        <About />
         <Portfolio />
       </main>
       <footer></footer>
