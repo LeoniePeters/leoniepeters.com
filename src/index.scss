@@ -28,9 +28,7 @@ h1 {
 a {
   color: $skyblue;
   text-decoration: none;
-  transition: 300ms linear;
   &:hover {
-    transition: all 300ms linear;
     text-decoration: underline;
   }
 }
