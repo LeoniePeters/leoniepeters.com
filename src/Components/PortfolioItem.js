@@ -23,8 +23,9 @@ class PortfolioItem extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h3>{this.props.project.title}</h3>
-            <i className="icon-link-ext"></i>
+            <h3>
+              {this.props.project.title} <i className="icon-link-ext"></i>
+            </h3>
           </a>
           <p>{this.props.project.technique}</p>
           <p>{this.props.project.boss}</p>

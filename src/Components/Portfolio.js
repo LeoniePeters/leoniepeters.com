@@ -6,7 +6,7 @@ import AllProjects from "../AllProjects";
 function Portfolio() {
   return (
     <div className="Portfolio" id="portfolio">
-      <h2>Portfolio</h2>
+      {/* <h2>Portfolio</h2> */}
       <ul>
         {AllProjects.map((project, index) => (
           <PortfolioItem project={project} key={index} />
