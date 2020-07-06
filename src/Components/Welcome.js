@@ -6,11 +6,14 @@ class Welcome extends Component {
     lightmode: false,
   };
 
-  toggleMode = () => {
-    this.setState({ lightmode: !this.state.lightmode });
-    this.state.lightmode
-      ? document.body.classList.add("lightmode-on")
-      : document.body.classList.remove("lightmode-on");
+  enableLightMode = () => {
+    this.setState({ lightmode: true });
+    document.body.classList.add("lightmode");
+  };
+
+  enableDarkMode = () => {
+    this.setState({ lightmode: false });
+    document.body.classList.remove("lightmode");
   };
 
   render() {
@@ -41,13 +44,15 @@ class Welcome extends Component {
         </div>
         <div className="mode-icons hexagon">
           {!this.state.lightmode && (
-            <button type="button" onClick={this.toggleMode}>
-              <i class="icon-sun"></i>
+            <button type="button" onClick={this.enableLightMode}>
+              <i className="icon-sun"></i>
+              Light mode
             </button>
           )}
           {this.state.lightmode && (
-            <button type="button" onClick={this.toggleMode}>
-              <i class="icon-moon"></i>
+            <button type="button" onClick={this.enableDarkMode}>
+              <i className="icon-moon"></i>
+              Dark mode
             </button>
           )}
         </div>

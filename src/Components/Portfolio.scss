@@ -44,32 +44,38 @@ ul {
   box-shadow: 1px 1px $linen, 2px 2px $linen, 3px 3px $linen, 4px 4px $linen,
     5px 5px $linen, 6px 6px $linen, 7px 7px $linen, 8px 8px $linen;
   transform: translateX(-8px) translateY(-8px);
-  transition: all 300ms ease-in;
-  // @include for-tablet-portrait-up {
-  //   padding: 0 1.5em;
-  // }
-  // }
+  transition: background-color 1s ease-in, color 1s ease-in, border 1s ease-in,
+    box-shadow 300ms ease-in, transform 300ms ease-in;
   &:hover,
   & .open {
-    // .info {
     box-shadow: 0 0 $linen, 0 0 $linen, 0 0 $linen, 0 0 $linen, 0 0 $linen,
       0 0 $linen, 0 0 $linen, 0 0 $linen;
     transform: translateX(0) translateY(0);
     transition: all 300ms ease-in;
-    // }
   }
-}
 
-i {
-  color: $skyblue;
-  font-family: "fontello";
-  font-size: 1em;
-
-  font-style: normal;
-  text-align: right;
-  // @include for-tablet-portrait-up {
-  //   font-size: 32px;
-  // }
+  @at-root .lightmode & {
+    background: $linen;
+    color: $blackish;
+    border: 1px solid $blackish;
+    box-shadow: 1px 1px $blackish, 2px 2px $blackish, 3px 3px $blackish,
+      4px 4px $blackish, 5px 5px $blackish, 6px 6px $blackish, 7px 7px $blackish,
+      8px 8px $blackish;
+    transform: translateX(-8px) translateY(-8px);
+    transition: background-color 1s ease-in, color 1s ease-in, border 1s ease-in,
+      box-shadow 300ms ease-in, transform 300ms ease-in;
+    &:hover,
+    & .open {
+      box-shadow: 0 0 $blackish, 0 0 $blackish, 0 0 $blackish, 0 0 $blackish,
+        0 0 $blackish, 0 0 $blackish, 0 0 $blackish, 0 0 $blackish;
+      transform: translateX(0) translateY(0);
+      transition: all 300ms ease-in;
+    }
+    a,
+    i {
+      color: $steelblue;
+    }
+  }
 }
 
 @include for-phone-only {
@@ -81,25 +87,3 @@ i {
     margin: 0.5em 0;
   }
 }
-
-// .natuurstad {
-//   background-image: url("../assets/images/Natuurstad-screenshot.jpg");
-// }
-// .kor-utrecht {
-//   background-image: url("../assets/images/KOR-Utrecht-screenshot.jpg");
-// }
-// .nsob {
-//   background-image: url("../assets/images/nsob-screenshot.jpg");
-// }
-// .leraarvanbuiten {
-//   background-image: url("../assets/images/leraarvanbuiten-screenshot.jpg");
-// }
-// .hollandhightech {
-//   background-image: url("../assets/images/hollandhightech-screenshot.jpg");
-// }
-// .ohmmmm {
-//   background-image: url("../assets/images/ohmmmm-screenshot.png");
-// }
-// .drawbsurd {
-//   background-image: url("../assets/images/drawbsurd-screenshot.jpg");
-// }
