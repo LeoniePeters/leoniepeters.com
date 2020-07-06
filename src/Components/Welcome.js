@@ -24,18 +24,6 @@ class Welcome extends Component {
             👋🏻
           </span>
         </div>
-        <div className="mode-icons hexagon">
-          {!this.state.lightmode && (
-            <button type="button" onClick={this.toggleMode}>
-              <i class="icon-sun"></i>
-            </button>
-          )}
-          {this.state.lightmode && (
-            <button type="button" onClick={this.toggleMode}>
-              <i class="icon-moon"></i>
-            </button>
-          )}
-        </div>
         <div className="history hexagon">
           <p>
             Art historian turned coder thanks to{" "}
@@ -50,6 +38,18 @@ class Welcome extends Component {
         </div>
         <div className="stack hexagon">
           <p>♥ Sass, JavaScript, React</p>
+        </div>
+        <div className="mode-icons hexagon">
+          {!this.state.lightmode && (
+            <button type="button" onClick={this.toggleMode}>
+              <i class="icon-sun"></i>
+            </button>
+          )}
+          {this.state.lightmode && (
+            <button type="button" onClick={this.toggleMode}>
+              <i class="icon-moon"></i>
+            </button>
+          )}
         </div>
       </div>
     );

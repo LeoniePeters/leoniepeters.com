@@ -16,7 +16,22 @@
   @include for-desktop-up {
     min-height: 52vw;
   }
+  i {
+    color: $linen;
+    height: 50px;
+    &::before {
+      font-size: 3em;
+      margin: 0;
+    }
+  }
 }
+button {
+  background: none;
+  border: none;
+  border-radius: 0;
+  padding: 0.5em;
+}
+
 .hexagon {
   @include for-tablet-portrait-up {
     box-sizing: border-box;
@@ -81,6 +96,19 @@
   @include for-desktop-up {
     top: 25.8vw;
     left: 47.6vw;
+  }
+}
+.mode-icons {
+  @include for-tablet-portrait-up {
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    top: 33.5vw;
+    left: 0;
+  }
+  @include for-desktop-up {
+    top: 25.8vw;
+    left: 3vw;
   }
 }
 .hoi {
