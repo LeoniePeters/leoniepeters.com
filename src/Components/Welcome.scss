@@ -16,12 +16,47 @@
   @include for-desktop-up {
     min-height: 52vw;
   }
+  i {
+    color: $gold;
+    height: 50px;
+    transition: color 1s ease-in;
+    &::before {
+      display: block;
+      font-size: 3em;
+      margin: 0 auto 0.5em;
+      transition: all 300ms ease-in;
+    }
+    @at-root .lightmode & {
+      color: $steelblue;
+      transition: all 1s ease-in;
+    }
+  }
 }
+button {
+  background: none;
+  border: none;
+  border-radius: 0;
+  color: $linen;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 1em;
+  padding: 0.5em;
+  cursor: pointer;
+  transition: color 1s ease-in;
+  @at-root .lightmode & {
+    color: $blackish;
+    transition: color 1s ease-in;
+  }
+  &:hover i::before {
+      transform: scale(1.5);
+      transition: all 300ms ease-in;
+  }
+}
+
 .hexagon {
   @include for-tablet-portrait-up {
     box-sizing: border-box;
     position: absolute;
-    background: url(/elements/hexagon.svg) no-repeat;
+    background: url(/elements/hexagon-linen.svg) no-repeat;
     background-size: 100%;
     overflow: hidden;
     padding: 0 4%;
@@ -30,6 +65,10 @@
     text-align: center;
     width: 39vw;
     height: 35vw;
+    @at-root .lightmode & {
+      background: url(/elements/hexagon-blackish.svg) no-repeat;
+      background-size: 100%;
+    }
   }
   @include for-desktop-up {
     width: 30vw;
@@ -83,7 +122,20 @@
     left: 47.6vw;
   }
 }
-.hoi {
+.mode-icons, .lightmode .mode-icons {
+  @include for-tablet-portrait-up {
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    top: 33.5vw;
+    left: 0;
+  }
+  @include for-desktop-up {
+    top: 25.8vw;
+    left: 3vw;
+  }
+}
+.hoi, .lightmode .hoi {
   @include for-tablet-portrait-up {
     background: transparent;
     font-size: 2em;
