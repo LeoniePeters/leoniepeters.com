@@ -15,10 +15,11 @@ ul {
   }
   ul {
     @include for-tablet-portrait-up {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      flex-wrap: wrap;
+    columns: 2;
+    column-gap: 3em;
+    }
+    @include for-tablet-landscape-up {
+    columns: 3;
     }
   }
 }
@@ -27,11 +28,9 @@ ul {
   width: 80%;
   margin: 0 auto 3em;
   @include for-tablet-portrait-up {
-    width: 45%;
+    width: auto;
     margin: 0 0 3em;
-  }
-  @include for-tablet-landscape-up {
-    width: 30%;
+    break-inside: avoid-column;
   }
   // .info {
   box-sizing: border-box;
@@ -40,7 +39,6 @@ ul {
   box-sizing: border-box;
   border: 1px solid $linen;
   color: $linen;
-  padding: 1em 1.5em;
   box-shadow: 1px 1px $linen, 2px 2px $linen, 3px 3px $linen, 4px 4px $linen,
     5px 5px $linen, 6px 6px $linen, 7px 7px $linen, 8px 8px $linen;
   transform: translateX(-8px) translateY(-8px);
@@ -52,6 +50,17 @@ ul {
       0 0 $linen, 0 0 $linen, 0 0 $linen;
     transform: translateX(0) translateY(0);
     transition: all 300ms ease-in;
+  }
+  a {
+    display: block;
+    padding: 1em 1.5em;
+    color: $linen;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  h2 {
+    color: $skyblue;
   }
 
   @at-root .lightmode & {
@@ -71,8 +80,10 @@ ul {
       transform: translateX(0) translateY(0);
       transition: all 300ms ease-in;
     }
-    a,
-    i {
+    a {
+      color: $blackish;
+    }
+    h2 {
       color: $steelblue;
     }
   }

@@ -12,9 +12,8 @@ class PortfolioItem extends Component {
   render() {
     return (
       <li
-        className={`portfolio-item ${this.props.project.class} ${
-          this.state.open ? "open" : ""
-        }`}
+        className={`portfolio-item ${this.props.project.class} ${this.state.open ? "open" : ""
+          }`}
         onClick={this.handleOnClick}
       >
         <div className="info">
@@ -23,14 +22,14 @@ class PortfolioItem extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h3>
+            <h2>
               {this.props.project.title} <i className="icon-link-ext"></i>
-            </h3>
+            </h2>
+            <p>{this.props.project.technique}</p>
+            <p>{this.props.project.boss}</p>
+            <p>{this.props.project.dev}</p>
+            {this.props.project.design && <p>{this.props.project.design}</p>}
           </a>
-          <p>{this.props.project.technique}</p>
-          <p>{this.props.project.boss}</p>
-          <p>{this.props.project.dev}</p>
-          {this.props.project.design && <p>{this.props.project.design}</p>}
         </div>
       </li>
     );

@@ -4,6 +4,7 @@
 *:focus {
   outline: 2px dashed $skyblue;
 }
+
 body {
   font-size: 14px;
   background-color: $blackish;
@@ -20,6 +21,9 @@ body {
   @include for-desktop-up {
     font-size: 18px;
   }
+  &.preload, &.preload * {
+  transition: none !important;
+}
 }
 .lightmode {
   background: $white;
