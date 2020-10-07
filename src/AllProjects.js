@@ -1,5 +1,14 @@
 const AllProjects = [
   {
+    class: "zelfinspectie",
+    url: "https://www.zelfinspectie.nl/",
+    title: "Zelfinspectie.nl",
+    technique: "Drupal, Sass, jQuery, PHP, FPDF",
+    boss: "Ontwerpwerk for Ministerie SZW",
+    dev: "Development: Nawien Kalidien, Leonie Peters",
+    design: "Design: Jeffrey Grin",
+  },
+  {
     class: "natuurstad",
     url: "https://www.natuurstad.nl/",
     title: "Natuurstad",
