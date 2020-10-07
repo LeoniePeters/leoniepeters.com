@@ -62,6 +62,7 @@ button {
     height: 35vw;
     @at-root .lightmode & {
       background: url(/elements/hexagon-blackish.svg) no-repeat;
+      background-size: 100%;
     }
   }
   @include for-desktop-up {
@@ -116,7 +117,7 @@ button {
     left: 47.6vw;
   }
 }
-.mode-icons {
+.mode-icons, .lightmode .mode-icons {
   @include for-tablet-portrait-up {
     background: transparent;
     display: flex;
@@ -129,7 +130,7 @@ button {
     left: 3vw;
   }
 }
-.hoi {
+.hoi, .lightmode .hoi {
   @include for-tablet-portrait-up {
     background: transparent;
     font-size: 2em;
